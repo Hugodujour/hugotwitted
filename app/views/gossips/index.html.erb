@@ -1,0 +1,13 @@
+<div class="d-flex p-2 align-items-center justify-content-center">
+<h1>Welcome bitch</h1>
+</div>
+<div id="gossips">
+  <% @gossips.each do |gossip| %>
+    <%= render gossip %>
+    <p>
+      <%= link_to "Show this gossip", gossip %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New gossip", new_gossip_path %>
